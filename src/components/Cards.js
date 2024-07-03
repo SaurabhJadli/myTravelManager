@@ -6,19 +6,6 @@ import '../App.css';
 
 export default function Cards(props) {
 	return (
-		// <div className='card'>
-		// 	<section className='column-left'>
-		// 		<img className="card-img" src={props.item.coverImg} alt={props.item.title} />
-		// 	</section>
-		// 	<section className='column-right'>
-		// 		<span className='material-symbols-outlined'>location_on</span>
-		// 		<span className="card-country">{props.item.country} </span>
-		// 		<a href={props.item.googleMapLink} target='_blank'>View on Google Maps</a>
-		// 		<h3 className="card-country-title">{props.item.title}</h3>
-		// 		<p className='desc'>{props.item.description}</p>
-		// 		<a href={props.item.details} target='_blank'><span className='ReadMore'>Read more..</span></a>
-		// 	</section>
-
 
 			<div className="card mb-3 card-style" > 
 			  <div className="row g-0">
@@ -32,12 +19,12 @@ export default function Cards(props) {
 		<a href={props.item.googleMapLink} target='_blank' card-text>View on Google Maps</a>
 <br /><br />
         <h5 className="card-title title">{props.item.title}</h5>
-        <p className="card-text">{props.item.description}</p>
+        <p className="card-text desc">{props.item.description}</p>
 		<a href={props.item.details} target='_blank'> <p className="card-text"><small className="text-body-secondary">Read more..</small></p></a>
       </div>
     </div>
   </div>
 </div>
-		// </div>
+		
 	)
 }

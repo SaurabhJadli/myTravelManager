@@ -24,6 +24,12 @@ export default function Header() {
 			Plan trip</Link>
         </li>
 
+		<li className="nav-item">
+		<Link to="/plan" className="nav-link active" aria-current="page" >
+		<img src="/img/category_search.svg" alt="planLogo" className="headLogo" />
+		Category</Link>
+        </li>
+
         <li className="nav-item">
 		<Link to="/login" className="nav-link" href="#">
 		<img src="/img/log-out.png" alt="Logout" className="headLogo" />
@@ -33,7 +39,7 @@ export default function Header() {
 
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
+        <button className="btn btn-outline-success bg-success text-white" type="submit">Search</button>
       </form>
     </div>
   </div>
