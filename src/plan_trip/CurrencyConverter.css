@@ -17,7 +17,7 @@
 	font-size: 35px;
 }
 
-.container {
+.container-manual {
 	height: auto;
 	width: 800px;
 	display: flex;
@@ -28,7 +28,7 @@
 	margin: auto
 }
 
-input {
+.Curr-input {
 	padding-left: 5px;
 	font-size: 20px;
 	height: 36px;
@@ -52,7 +52,7 @@ input {
 	padding-left: 30px;
 }
 
-button {
+.Curr-button {
 	width: 100px;
 	height: 30px;
 	font-weight: bold;
@@ -64,13 +64,13 @@ button {
 
 }
 
-p,
-h3,
-button,
+.curr-p,
+.curr-h3,
+.curr-button,
 .switch {
 	color: forestgreen;
 }
 
-p {
+.curr-p {
 	font-size: 30px;
 }

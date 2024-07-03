@@ -6,23 +6,38 @@ import '../App.css';
 
 export default function Header() {
 	return (
-		<div>
-			<header className="journal-header">
-			<ol className="head-li">
-				<li>
-				<Link to="/home" className="logoTitle"><h1 className="title">My travel management</h1></Link>
-				</li>
+		
+			<div className="container ">
+			<nav className="navbar navbar-expand-lg nav-color  fixed-top" >
+  <div className="container-fluid nav-color">
+  <Link to="/home" className="navbar-brand " ><h2 className="logoTitle">My travel management</h2></Link>
 
-				<Link to="/plan"><li className="options" >
-				<img src="/img/plan.jpg" alt="planLogo" className="headLogo" /><br />
-				Plan trip </li></Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
 
-				<Link to="/login"><li className="options"> 
-				<img src="/img/log-out.png" alt="Logout" className="headLogo" /><br />
-				log out</li></Link>
-			</ol>
+    <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+		<Link to="/plan" className="nav-link active" aria-current="page" >
+		<img src="/img/plan.jpg" alt="planLogo" className="headLogo" />
+			Plan trip</Link>
+        </li>
 
-			</header>
-		</div>
+        <li className="nav-item">
+		<Link to="/login" className="nav-link" href="#">
+		<img src="/img/log-out.png" alt="Logout" className="headLogo" />
+		log out</Link>
+        </li>
+      </ul>
+
+      <form className="d-flex" role="search">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</div>
 	);
 }

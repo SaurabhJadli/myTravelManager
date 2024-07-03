@@ -19,6 +19,7 @@ export default function Home() {
 		
 		<div>
             <Header />
+            <br /><br /> <br /> 
             {mappedData}
             <Footer />
             </div>

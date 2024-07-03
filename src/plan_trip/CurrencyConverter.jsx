@@ -51,15 +51,15 @@ export default function CurrencyConverter() {
 			<div className="heading">
 				<h1>Currency converter</h1>
 			</div>
-			<div className="container">
+			<div className="container-manual">
 				<div className="left">
-					<h3>Amount</h3>
-					<input type="text"
+					<h3 className='curr-h3'>Amount</h3>
+					<input className='Curr-input' type="text"
 						placeholder="Enter the amount"
 						onChange={(e) => setInput(e.target.value)} />
 				</div>
 				<div className="middle">
-					<h3>From</h3>
+					<h3 className='curr-h3'>From</h3>
 					<Dropdown options={options}
 						onChange={(e) => { setFrom(e.value) }}
 						value={from} placeholder="From" />
@@ -69,16 +69,16 @@ export default function CurrencyConverter() {
 						onClick={() => { flip() }} />
 				</div>
 				<div className="right">
-					<h3>To</h3>
+					<h3 className='curr-h3'>To</h3>
 					<Dropdown options={options}
 						onChange={(e) => { setTo(e.value) }}
 						value={to} placeholder="To" />
 				</div>
 			</div>
 			<div className="result">
-				<button onClick={() => { convert() }}>Convert</button>
+				<button className='Curr-button' onClick={() => { convert() }}>Convert</button>
 				<h2>Converted Amount:</h2>
-				<p>{input + " " + from + " = " + output.toFixed(2) + " " + to}</p>
+				<p className='curr-p'>{input + " " + from + " = " + output.toFixed(2) + " " + to}</p>
 
 			</div>
 		</div>
