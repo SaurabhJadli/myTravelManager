@@ -123,13 +123,18 @@ margin-top: 15%;
         'opsz' 24,
     } */
 
+
+    .homeCards{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     .card-style {
         width: 100%;
     }
     
     .card-img {
     
-    min-width: 300px;
+    min-width: 250px;
     max-width: 500px;
     margin-bottom: 15px;
     padding-left: 10px;

@@ -20,7 +20,10 @@ export default function Home() {
 		<div>
             <Header />
             <br /><br /> <br /> 
+            <div className='homeCards'>
             {mappedData}
+
+            </div>
             <Footer />
             </div>
     )

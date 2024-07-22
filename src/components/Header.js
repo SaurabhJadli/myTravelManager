@@ -1,13 +1,17 @@
 //Header.js
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../App.css';
 
-
 export default function Header() {
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const data = {st:searchTerm};
+
 	return (
 		
-			<div className="container ">
+			<div className="container">
 			<nav className="navbar navbar-expand-lg nav-color  fixed-top" >
   <div className="container-fluid nav-color">
   <Link to="/home" className="navbar-brand " ><h2 className="logoTitle">My travel management</h2></Link>
@@ -38,8 +42,10 @@ export default function Header() {
       </ul>
 
       <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success bg-success text-white" type="submit">Search</button>
+        <input className="form-control me-2" type="search" placeholder="Search" onChange={(e) =>{
+          setSearchTerm(e.target.value);
+        }} aria-label="Search" />
+     <Link to="/searchResult" state={data}> <button className="btn btn-outline-success bg-success text-white">Search</button></Link>
       </form>
     </div>
   </div>

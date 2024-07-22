@@ -8,6 +8,7 @@ import Login from './Login.js';
 import Home from './Home.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Plan from './plan_trip/Plan.jsx';
+import SearchResult from './components/SearchResult.jsx';
   
 
 export default function App() {
@@ -25,6 +26,8 @@ export default function App() {
         	<Route path="/regi" element={<Regi />}/>
 
         	<Route path="/plan" element={<Plan />}/>
+
+			<Route path="/searchResult" element={<SearchResult />}/>
 			
 			</Routes>
 		</BrowserRouter>
