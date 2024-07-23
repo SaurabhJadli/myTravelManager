@@ -28,11 +28,23 @@ export default function Header() {
 			Plan trip</Link>
         </li>
 
-		<li className="nav-item">
-		<Link to="/plan" className="nav-link active" aria-current="page" >
+		<li className="nav-item dropdown">
+		<a href="#" className="nav-link active dropdown-toggle" aria-current="page"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
 		<img src="/img/category_search.svg" alt="planLogo" className="headLogo" />
-		Category</Link>
+		Category</a>
+
+    <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="#">Beaches</a></li>
+            <li><a className="dropdown-item" href="#">Hill Station</a></li>
+            <li><a className="dropdown-item" href="#">Island</a></li>
+            <li><a className="dropdown-item" href="#">Mega cities</a></li>
+            <li><a className="dropdown-item" href="#">Deserts</a></li>
+            <li><a className="dropdown-item" href="#">Snow and Ice</a></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><a className="dropdown-item" href="#">Asia N.America S.America Africa Austalia Antartica Europe</a></li>
+          </ul>
         </li>
+
 
         <li className="nav-item">
 		<Link to="/login" className="nav-link" href="#">
