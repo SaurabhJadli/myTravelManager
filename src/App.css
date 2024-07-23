@@ -6,6 +6,13 @@ padding-right: 35%;
 margin-top: 15%;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .regi {
+padding-left: 10%;
+padding-right: 10%;   
+ }
+  }
+
 .regiP{
     color: rgba(31, 14, 14, 0.918);
     font-size: medium;
@@ -13,10 +20,18 @@ margin-top: 15%;
 }
 
 .login {
+    
 padding-left: 35%;
 padding-right: 35%;
 margin-top: 15%;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .login {
+padding-left: 10%;
+padding-right: 10%;   
+ }
+  }
 
 .loginLink {
     color: blueviolet;

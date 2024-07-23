@@ -9,17 +9,19 @@ export default function Login() {
 
 			<h1 className='text-primary'>LogIn here </h1>
 			<form action="">
+
+			 <div className="form-floating mb-3">
+			  <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+			  <label for="floatingInput">Email address</label>
+			  </div>
+
+			  <div className="form-floating">
+			  <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+			  <label for="floatingPassword">Password</label>
+			  </div>
 			
-				  <div className="mb-3">
-				<input type="email" placeholder="Email" className='form-control'/>
-				</div>
-
-				<div className="mb-3">
-				<input type="password" placeholder="Password" className='form-control' />
-				</div>
-
-				<button type="submit" className='btn btn-primary'
-				>
+<br />
+				<button type="submit" className='btn btn-primary'>
 				<Link to="/home" className='submitBtn'> submit</Link>
 				</button>
 			</form>
