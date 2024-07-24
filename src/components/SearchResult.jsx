@@ -20,7 +20,7 @@ export default function SearchResult() {
     if(state.st ==""){
         return item;
     }
-    else if(item.title.toLowerCase().includes(state.st.toLowerCase())){
+    else if(item.keyword.toLowerCase().includes(state.st.toLowerCase())){
         return item;
     }
 }).map((item) => {
