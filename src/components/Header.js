@@ -64,7 +64,15 @@ export default function Header() {
             Snow and Ice</a></li>
            
             <li><hr className="dropdown-divider" /></li>
-            <li><a className="dropdown-item" href="#">Asia N.America S.America Africa Austalia Antartica Europe</a></li>
+            <li><a className="dropdown-item" href="#">
+            <button type="button" class="btn btn-success me-2">Asia</button>
+            <button type="button" class="btn btn-light me-2" >Antartica</button>
+            <button type="button" class="btn btn-warning me-2">Africa</button>
+            <button type="button" class="btn btn-secondary me-2">Austalia</button>
+            <button type="button" class="btn btn-primary me-2">Europe</button>
+            <button type="button" class="btn btn-info me-2">N.America</button>
+            <button type="button" class="btn btn-danger me-2">S.America</button>
+                  </a></li>
           </ul>
         </li>
 
