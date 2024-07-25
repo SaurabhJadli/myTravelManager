@@ -14,7 +14,7 @@ export default function Header() {
 			<div className="container">
 			<nav className="navbar navbar-expand-lg nav-color  fixed-top" >
   <div className="container-fluid nav-color">
-  <Link to="/home" className="navbar-brand " ><h2 className="logoTitle">My travel management</h2></Link>
+  <Link to="/home" className="navbar-brand " ><h2 className="logoTitle">WanderWave</h2></Link>
 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -34,12 +34,35 @@ export default function Header() {
 		Category</a>
 
     <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Beaches</a></li>
-            <li><a className="dropdown-item" href="#">Hill Station</a></li>
-            <li><a className="dropdown-item" href="#">Island</a></li>
-            <li><a className="dropdown-item" href="#">Mega cities</a></li>
-            <li><a className="dropdown-item" href="#">Deserts</a></li>
-            <li><a className="dropdown-item" href="#">Snow and Ice</a></li>
+   
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/national-park.png" class="rounded-circle img-fluid category-img" alt="national_park" />
+            National Parks</a></li>
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/beach.png" class="rounded-circle img-fluid category-img" alt="Beaches" />
+            Beaches</a></li>
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/mountains.png" class="rounded-circle img-fluid category-img" alt="Hill Station" /> 
+            Hill Station</a></li>
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/island.png" class="rounded-circle img-fluid category-img" alt="Island" />
+            Island</a></li>
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/city.png" class="rounded-circle img-fluid category-img" alt="Mega cities" /> 
+            Mega cities</a></li>
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/ancient.png" class="rounded-circle img-fluid category-img" alt="Ancient and Historical" /> 
+            Ancient and Historical</a></li>
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/religious.png" class="rounded-circle img-fluid category-img" alt="Religious Sites" />  
+            Religious Sites</a></li>
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/desert.png" class="rounded-circle img-fluid category-img" alt="Deserts" />
+            Deserts</a></li>
+            <li><a className="dropdown-item fw-bold" href="#">
+            <img src="/img/snowman.png" class="rounded-circle img-fluid category-img" alt="Snow and Ice" />
+            Snow and Ice</a></li>
+           
             <li><hr className="dropdown-divider" /></li>
             <li><a className="dropdown-item" href="#">Asia N.America S.America Africa Austalia Antartica Europe</a></li>
           </ul>

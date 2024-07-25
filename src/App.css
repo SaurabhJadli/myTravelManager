@@ -108,7 +108,11 @@ padding-right: 10%;
         background-color: #d74180;
 
     }
-
+.category-img {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2%;
+}
    
     .title {
         font-weight: 600;

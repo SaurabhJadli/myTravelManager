@@ -11,7 +11,7 @@ export const data = [
 		googleMapLink: 
 "https://www.google.com/maps/place/Lake+Atitl%C3%A1n/@14.6788007,-91.2837663,12z/data=!3m1!4b1!4m6!3m5!1s0x85894ac7c083b493:0xa6e33f7d6b54910!8m2!3d14.6906713!4d-91.2025207!16zL20vMDN3NXpy?entry=ttu",
 		details: "https://en.wikipedia.org/wiki/Lake_Atitl%C3%A1n",
-		keyword: "panajachel, lake, atitlan",
+		keyword: "panajachel, lake, atitlan, nature, mountains, hill, hills",
 	},
 	{
 		id: 2,
@@ -23,7 +23,7 @@ export const data = [
 		googleMapLink: 
 "https://www.google.com/maps/search/belize+secret+beach/@18.0171292,-87.9672513,13z/data=!3m1!4b1?entry=ttu",
 		details: "",
-		keyword: "secret, beach, island",
+		keyword: "secret, beach, island, sea, coconut",
 	},
 	{
 		id: 3,
@@ -35,7 +35,7 @@ export const data = [
 		googleMapLink: 
 "https://maps.app.goo.gl/PNZ3GGaxEejS7H5Q8",
 		details: "",
-		keyword: "",
+		keyword: "nature, mountains, mountain, lake, Uttarakhand, india, asia",
 	},
 	{
 		id: 4,
@@ -47,7 +47,7 @@ export const data = [
 		googleMapLink: 
 "https://maps.app.goo.gl/95HipSGMuPyjHinf9",
 		details: "https://en.wikipedia.org/wiki/Haridwar",
-		keyword: "haridwar, ancient, river, uttarakhand, holy, religious",
+		keyword: "haridwar, ancient, river, Uttarakhand, holy, religious, india, asia",
 	},
 	{
 		id: 5,
@@ -59,7 +59,7 @@ export const data = [
 		googleMapLink: 
 "https://maps.app.goo.gl/J2TnebwZsZdyPoK18",
 		details: "https://en.wikipedia.org/wiki/Giza_pyramid_complex",
-		keyword: "",
+		keyword: "egypt, giza, nile, pyramids, pyramid, desert, hot, ancient, africa",
 	},
 	{
 		id: 6,
@@ -71,7 +71,7 @@ export const data = [
 		googleMapLink: 
 "https://maps.app.goo.gl/ioZMMzhN181bhjra7",
 		details: "https://en.wikipedia.org/wiki/Swiss_National_Park",
-		keyword: "",
+		keyword: "swiss, park, nature, europe",
 	},
 	{
 		id: 7,
@@ -83,6 +83,6 @@ export const data = [
 		googleMapLink: 
 "https://maps.app.goo.gl/YQiMgAsVSemu5X5J7",
 		details: "https://en.wikipedia.org/wiki/Osaka",
-		keyword: "",
+		keyword: "japan, osaka, city, morden, island, honshu, nightlife, asia",
 	}
 ]
