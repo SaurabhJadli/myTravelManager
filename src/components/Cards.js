@@ -16,11 +16,11 @@ export default function Cards(props) {
       <div className="card-body">
 	   <span className='material-symbols-outlined card-text'>location_on</span>
 	   <span className="card-country card-text">{props.item.country} </span>
-		<a href={props.item.googleMapLink} target='_blank' card-text>View on Google Maps</a>
+		<a href={props.item.googleMapLink} target='_blank' className='card-text' rel="noopener noreferrer">View on Google Maps</a>
 <br /><br />
         <h5 className="card-title title">{props.item.title}</h5>
         <p className="card-text desc">{props.item.description}</p>
-		<a href={props.item.details} target='_blank'> <p className="card-text"><small className="text-body-secondary">Read more..</small></p></a>
+		<a href={props.item.details} target='_blank' rel="noopener noreferrer"> <p className="card-text"><small className="text-body-secondary">Read more..</small></p></a>
       </div>
     </div>
   </div>

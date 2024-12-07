@@ -4,7 +4,7 @@ import { useLocation } from "react-router";
 import { data } from "../data";
 import Cards from "./Cards";
 
-export default function SearchResult() {
+export default function SearchResult() {      
     
     const location = useLocation();
     const {state} = location;
@@ -14,16 +14,18 @@ export default function SearchResult() {
         <div>
         <Header />
 
-        <h1>Results...</h1>
-
-{data.filter((item) =>{
-    if(state.st ==""){
-        return item;
+        <h1>Results...</h1>     
+                            
+{data.filter((item) =>{     
+    if(state.st ===""){    
+        return item;       
     }
-    else if(item.keyword.toLowerCase().includes(state.st.toLowerCase())){
-        return item;
+    else if (item.keyword.toLowerCase().includes(state.st.toLowerCase())) {
+      return true; // Keep item if keyword matches state.st
+    } else {
+      return false; // Return false to exclude item if no match
     }
-}).map((item) => {
+  }).map((item) => {
         return(
             <div className='homeCards'>
 
